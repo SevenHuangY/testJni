@@ -14,11 +14,14 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         TextView tx = (TextView) findViewById(R.id.tx);
-        int c = getSum(1, 2);
-        tx.setText("sum: " + c);
+
+        String tmp = subString("hello world!", 8, 15);
+        tx.setText("SubString: " + tmp);
     }
 
     public native int getSum(int a, int b);
+
+    public native String subString(String sting, int start, int len);
 
     static
     {
