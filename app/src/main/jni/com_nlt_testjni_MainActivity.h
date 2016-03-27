@@ -23,6 +23,14 @@ JNIEXPORT jint JNICALL Java_com_nlt_testjni_MainActivity_getSum
 JNIEXPORT jstring JNICALL Java_com_nlt_testjni_MainActivity_subString
   (JNIEnv *, jobject, jstring, jint, jint);
 
+/*
+ * Class:     com_nlt_testjni_MainActivity
+ * Method:    setStudentAge
+ * Signature: (Ljava/util/ArrayList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+ */
+JNIEXPORT jobject JNICALL Java_com_nlt_testjni_MainActivity_setStudentAge
+  (JNIEnv *, jobject, jobject, jobject);
+
 #ifdef __cplusplus
 }
 #endif
